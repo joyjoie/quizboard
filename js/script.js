@@ -1,72 +1,73 @@
-$(document).ready(function() {
-  $(".form-group2,.form-group3,.form-group4,.form-group5").hide();
-  var score = 0;
-  var answer1 = $("input:radio[name=question1]").val();
-    $("#fnext").click(function() {
+function quizComp() {
+    var qOne = document.getElementsByName('question1');
+    var qTwo = document.getElementsByName('question2');
+    var qThree = document.getElementsByName('question3');
+    var qFour = document.getElementsByName('question4');
+    var qFive = document.getElementsByName('question5');
+    var score = 0;
 
-    if (answer1 == "CSS") {
-      score =+2
-      $(".form-group2").show();
-      $('#spanid').html('&#10004;');
-      //  console.log("Good Work!");
-      $(".form-group2").show();
-    } else {
-      $(".form-group2").show();
+    for (var i = 0, length = qOne.length; i < length; i++) {
+        if (qOne[i].checked) {
+            var ans1 = qOne[i].value
+            if (qOne[i].value === 'b') {
+                score +=10
+            }
+        }
     }
-  })
-  var answer2 = $("input:radio[name=question2]").val();
-    $("#snext").click(function() {
-
-    if (answer2 == "CSS") {
-      score =+2
-      $(".form-group3").show();
-      $('#spanid').html('&#10004;');
-      //  console.log("Good Work!");
-      $(".form-group3").show();
-    } else {
-      $(".form-group3").show();
+    for (var i = 0, length = qTwo.length; i < length; i++) {
+        if (qTwo[i].checked) {
+            var ans2 = qTwo[i].value
+            if (qTwo[i].value === 'c') {
+                score +=10
+            }
+        }
     }
-  })
-  var answer3 = $("input:radio[name=question3]").val();
-    $("#tnext").click(function() {
-
-    if (answer3 == "CSS") {
-      score =+2
-      $(".form-group4").show();
-      $('#spanid').html('&#10004;');
-      //  console.log("Good Work!");
-      $(".form-group4").show();
-    } else {
-      $(".form-group4").show();
+    for (var i = 0, length = qThree.length; i < length; i++) {
+        if (qThree[i].checked) {
+            var ans3 = qThree[i].value;
+            if (qThree[i].value === 'b') {
+                score +=10
+            }
+        }
     }
-  })
-
-  var answer4 = $("input:radio[name=question4]").val();
-  $("#rnext").click(function() {
-    if (answer4 == "2020") {
-      score =+2
-      $(".form-group5").show();
-      $('#spanid').html('&#10004;');
-      $(".form-group5").show();
-      // console.log("You're doing good proceed");
-    } else {
-      $(".form-group5").show();
-      //   console.log("Error.Try again")
+    for (var i = 0, length = qFour.length; i < length; i++) {
+        if (qFour[i].checked) {
+            var ans4 = qFour[i].value
+            if (qFour[i].value === 'c') {
+                score +=10
+            }
+        }
     }
-  })
-  var answer5 = $("input:radio[name=question5]").val();
-  $("#sub").click(function() {
-    if (answer5 == "Yes") {
-      score =+2
-
-      $('#spanid').html('&#10004;');
-      $(".form-group5").show();
-      //console.log("You're done with all your questions");
-
-    } else {
-      $(".form-group5").show();
-      //  console.log("finish the last question")
+    for (var i = 0, length = qFive.length; i < length; i++) {
+        if (qFive[i].checked) {
+            var ans5 = qFive[i].value
+            if (qFive[i].value === 'a') {
+                score +=10
+            }
+        }
     }
-  })
+    if (ans1 == undefined || ans2 == undefined || ans3 == undefined || ans4 == undefined || ans5 == undefined) {
+alert('Please select all answers');
+    } else {
 
-});
+     if (score === 0){
+        document.getElementById('yoo').value = 'Try again, you scored : ' + score +"/50";
+    }
+     else if (score <= 10)  {
+        document.getElementById('yoo').value = 'You can do better , you scored : ' + score +"/50";
+    }
+    else if (score === 20){
+        document.getElementById('yoo').value = 'There is room for improvement, you scored : ' + score +"/50";
+    }
+    else if (score > 30){
+        document.getElementById('yoo').value = 'congratulations! , you scored :' + score +"/50";
+
+    }
+
+
+        event.preventDefault();
+
+
+
+}
+}
