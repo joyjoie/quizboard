@@ -1,12 +1,24 @@
-/* .que2{
-  visibility: hidden;
+body {
+background-image: url(que.jpeg);
+background-repeat: no-repeat;
+background-size: 2500px;
+align-content: center;
+text-align: center;
 }
-.que3{
-  visibility: hidden;
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  width: 500px;
+  text-align: center;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
 }
-.que4{
-  visibility: hidden;
+.jumbotron{
+  color: white;
+  text-align: center;
+  padding-bottom: 25px;
 }
-.que5{
-  visibility: hidden;
-} */
+.submit{
+  align-content: center;
+}

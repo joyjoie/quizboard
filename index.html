@@ -4,69 +4,77 @@
 <head>
   <meta charset="utf-8">
   <title> Quiz</title>
-   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="junk.js"> </script>
+  <script type="text/javascript" src="js/script.js"> </script>
+  <div class="jumbotron">
+    <h1> Welcome to the javascript quiz </h1>
+    <h4> please ensure to answer all questions</h4>
+  </div>
 </head>
 
 <body>
-  <div class="go">
-    <h1> Try this quiz </h1>
-  </div>
+
   <form class="forms">
-    <div class="form-group1">
+      <div class = "container">
+    <div class="qst1">
       <p class="que1">
         1.What coding language is used for styling?
       </p>
-      <input type="radio" class="form-control" name="question1" id="html" value="a"> HTML
-      <input type="radio" class="form-control" name="question1" id="css" value="b">CSS
-      <input type="radio" class="form-control" name="question1" id="swahili" value="c">Javascript
+      <input type="radio" class="" name="question1" id="html" value="a"> HTML
+      <input type="radio" class="" name="question1" id="css" value="b">CSS
+      <input type="radio" class="" name="question1" id="swahili" value="c">Javascript
       <!-- <br><button type="button" name="button" id="fnext">Next</button> -->
-    </div>
+    </div><br><br>
 
-    <div class="form-group2">
+    <div class="qst2">
       <p class="que2">
         2.Which git command is used to add repository?
       </p>
-      <input type="radio" class="form-control" name="question2" id="gitpush" value="a">Git push
-      <input type="radio" class="form-control" name="question2" id="gitcommit" value="b">Git commit
-      <input type="radio" class="form-control" name="question2" id="gitremoteadd" value="c">Git remote add
+      <input type="radio" class="" name="question2" id="gitpush" value="a">Git push
+      <input type="radio" class="" name="question2" id="gitcommit" value="b">Git commit
+      <input type="radio" class="" name="question2" id="gitremoteadd" value="c">Git remote add
       <!-- <br> <button type="button" name="button" id="snext">Next</button> -->
-    </div>
+    </div><br><br>
 
-    <div class="form-group3">
+    <div class="qst3">
       <p class="que3">
         3.Which of the following is a kind of loop?
       </p>
-      <input type="radio" class="form-control" name="question3" id="else" value="a">Else
-      <input type="radio" class="form-control" name="question3" id="for" value="b">For
-      <input type="radio" class="form-control" name="question3" id="var" value="c">Var
+      <input type="radio" class="" name="question3" id="else" value="a">Else
+      <input type="radio" class="" name="question3" id="for" value="b">For
+      <input type="radio" class="" name="question3" id="var" value="c">Var
       <!-- <br><button type="button" name="button" id="tnext">Next</button> -->
-    </div>
+    </div><br><br>
 
-    <div class="form-group4">
+    <div class="qst4">
       <p class="que4">
         4.Which of the following is a leap year?
       </p>
-      <input type="radio" class="form-control" name="question4" id="yr1" value="a">1993
-      <input type="radio" class="form-control" name="question4" id="yr2" value="b">2001
-      <input type="radio" class="form-control" name="question4" id="yr3" value="c">2020
+      <input type="radio" class="" name="question4" id="yr1" value="a">1993
+      <input type="radio" class="" name="question4" id="yr2" value="b">2001
+      <input type="radio" class="" name="question4" id="yr3" value="c">2020
       <!-- <br><button type="button" name="button" id="rnext">Next</button> -->
-    </div>
+    </div><br><br>
 
-    <div class="form-group5">
+    <div class="qst5">
       <p class="que5">
         5.Does Javascript support Object Oriented programming?
       </p>
-      <input type="radio" class="form-control" name="question5" id="yep" value="a">Yes
-      <input type="radio" class="form-control" name="question5" id="nay" value="b">No
-      <br>
+      <input type="radio" class="" name="question5" id="yep" value="a">Yes
+      <input type="radio" class="" name="question5" id="nay" value="b">No
+      <br><br>
+    </div>
+    <div class="submit">
       <button type="submit" id="sub" onclick="quizComp()" value="subm">Submit</button>
-    </div>
+    </div><br>
+
+
     <div class="result">
-      <textarea name="name" type="text" id="yoo" disabled=""row="1" col="25"></textarea>
-    </div>
+      <textarea name="name" type="text" id="yoo" disabled="" rows="2" cols="45"></textarea>
+    </div><br>
+
   </form>
 
 </body>
