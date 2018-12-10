@@ -1,11 +1,12 @@
 body {
-background-image: url(que.jpeg);
-background-repeat: no-repeat;
-background-size: 2500px;
-align-content: center;
-text-align: center;
+  background-image: url(que.jpeg);
+  background-repeat: no-repeat;
+  background-size: 2500px;
+  align-content: center;
+  text-align: center;
 }
-.container{
+
+.container {
   margin-left: auto;
   margin-right: auto;
   padding-top: 50px;
@@ -14,11 +15,13 @@ text-align: center;
   padding-bottom: 25px;
   margin-bottom: 50px;
 }
-.jumbotron{
+
+.jumbotron {
   color: white;
   text-align: center;
   padding-bottom: 25px;
 }
-.submit{
+
+.submit {
   align-content: center;
 }
